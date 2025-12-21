@@ -13,21 +13,37 @@
    ```
 > ⚠️ **Important:** Right-click the file > Properties > Check "Read-only". This prevents OpenCode from auto-injecting the crashing `$schema` line again.
 
-## 2. Fix: Superpowers "Module Not Found"
-**Symptom:** Error loading `plugin/superpowers.js` stating it cannot find `../../lib/skills-core.js`.
-**Cause:** Manual installation often misses the `lib` folder.
+## 2. Fix: Superpowers Installation Failed (Symlink Error)
+**Symptom:** OpenCode crashes or shows "Module not found" when trying to load Superpowers.
+**Cause:** The official installation guide uses `ln -sf` (Linux command). On Windows, this fails to create a proper link to the plugin file, or creates a broken file.
 
-**Solution:**
-Ensure your folder structure looks exactly like this:
+**Solution (The "PowerShell" Way):**
+Instead of using the Linux command, follow these steps to install Superpowers correctly on Windows:
 
-```text
-.config/opencode/
-├── opencode.json
-├── plugin/
-│   └── superpowers.js
-├── lib/                 <-- MUST EXIST
-│   └── skills-core.js   <-- Download from Superpowers Repo
-└── skills/              <-- MUST EXIST
-```
+1.  **Remove Old/Broken Files:**
+    Go to `%USERPROFILE%\.config\opencode\plugin\` and delete `superpowers.js` if it exists (it's likely 0kb or broken).
 
-If missing, download `skills-core.js` manually from the official Superpowers repository and place it in a `lib` folder.
+2.  **Open PowerShell as Administrator** (Recommended).
+
+3.  **Run these commands sequentially:**
+
+    ```powershell
+    # 1. Create directory and clone the repo (if not already done)
+    mkdir -p $HOME\.config\opencode\superpowers
+    git clone [https://github.com/obra/superpowers.git](https://github.com/obra/superpowers.git) $HOME\.config\opencode\superpowers
+
+    # 2. Create the Plugin folder
+    mkdir -p $HOME\.config\opencode\plugin
+
+    # 3. Create the Symlink correctly (The Magic Step)
+    New-Item -ItemType SymbolicLink -Path "$HOME\.config\opencode\plugin\superpowers.js" -Target "$HOME\.config\opencode\superpowers\.opencode\plugin\superpowers.js"
+    ```
+
+4.  **Verify:**
+    Check if `superpowers.js` appears in your `.config\opencode\plugin` folder with a shortcut arrow icon.
+
+5.  **Alternative (Manual Copy):**
+    If the symlink method still fails due to permissions, you can copy the file manually (Note: You won't get auto-updates):
+    ```powershell
+    Copy-Item $HOME\.config\opencode\superpowers\.opencode\plugin\superpowers.js $HOME\.config\opencode\plugin\superpowers.js
+    ```
