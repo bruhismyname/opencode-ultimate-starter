@@ -11,7 +11,7 @@
    ```json
    { "plugin": ["oh-my-opencode"] }
    ```
-> ⚠️ **Important:** Right-click the file > Properties > Check "Read-only". This prevents OpenCode from auto-injecting the crashing `$schema` line again.
+> ! **Important:** Right-click the file > Properties > Check "Read-only". This prevents OpenCode from auto-injecting the crashing `$schema` line again.
 
 ## 2. Fix: Superpowers Installation Failed (Symlink Error)
 **Symptom:** OpenCode crashes or shows "Module not found" when trying to load Superpowers.

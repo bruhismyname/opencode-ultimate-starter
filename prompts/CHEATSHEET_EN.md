@@ -2,11 +2,11 @@
 
 This mode treats the AI as the **Architect** and you as the **Builder**. The AI does **not** edit files directly (saving tokens), but provides final code for you to copy-paste.
 
-### 🔑 The Golden Rule
+### The Golden Rule
 Append this to your prompts:
 > **"Do not execute any commands or edit files. Just provide the detailed plan/code in the chat response for me to copy-paste."**
 
-### 📋 Scenario Table
+### Scenario Table
 
 | Goal | Prompt Template |
 | :--- | :--- |

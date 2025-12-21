@@ -3,11 +3,11 @@
 Mode ini menjadikan AI sebagai **"Arsitek"** (Otak) dan Anda sebagai **"Tukang"** (Tangan).
 AI **tidak** mengedit file secara langsung (yang memakan ribuan token), tetapi memberikan kode final untuk Anda copy-paste.
 
-### 🔑 Kunci Utama
+### Kunci Utama
 Tambahkan kalimat ini di akhir setiap prompt Anda:
 > **"Jangan jalankan perintah terminal atau edit file apapun. Cukup berikan rencana/kode lengkap di chat agar bisa saya copy-paste."**
 
-### 📋 Tabel Skenario
+### Tabel Skenario
 
 | Tujuan | Prompt Sakti (Copy-Paste) |
 | :--- | :--- |
