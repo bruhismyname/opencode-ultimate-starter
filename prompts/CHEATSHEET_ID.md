@@ -55,6 +55,6 @@ Tambahkan kalimat ini di akhir setiap prompt Anda:
 | **Frontend UI** | "Bertindaklah sebagai **@frontend-ui-ux-engineer**. Buatkan komponen [Nama UI] menggunakan komponen Shadcn yang sudah terinstall. Fokus pada hierarki visual." |
 | **Refactoring** | "Kode di file [Nama File] terlalu berantakan. Refactor agar lebih bersih (Clean Code) tanpa mengubah fungsi utamanya. Jelaskan apa yang diubah." |
 
-### Tips Pro
+### Tips
 * **Jika Supabase Error:** Pastikan token di `opencode.json` masih valid.
 * **Jika Shadcn Error:** Pastikan project kamu sudah terinit `npx shadcn@latest init` sebelumnya.
