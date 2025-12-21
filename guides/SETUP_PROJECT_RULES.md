@@ -1,10 +1,10 @@
-# 🤖 Automate AI Discipline with `AGENTS.md`
+# Automate AI Discipline with `AGENTS.md`
 
 Salah satu fitur tersembunyi namun sangat powerful dari `oh-my-opencode` adalah **Directory Agents Injector**.
 
 Fitur ini memungkinkan Anda "menanamkan" aturan kerja (SOP) ke dalam setiap project secara otomatis. AI akan membaca file ini sebelum mulai bekerja, sehingga ia akan selalu patuh pada workflow yang Anda tentukan.
 
-## 📋 Cara Menggunakannya
+## Cara Menggunakannya
 
 ### Langkah 1: Buat File di Project Anda
 Di dalam folder root **project aplikasi** yang sedang Anda kerjakan (bukan folder config OpenCode), buat file baru bernama:
@@ -45,7 +45,7 @@ You are strictly required to follow these workflow rules for every task.
 ```
 
 ### Langkah 3: Restart Sesi
-Tutup sesi OpenCode Anda saat ini atau ketik `/reset` (jika didukung), lalu buka kembali. `oh-my-opencode` akan mendeteksi file `AGENTS.md` tersebut dan menyuntikkan instruksi di atas ke dalam system prompt AI.
+Tutup sesi OpenCode Anda saat ini, lalu buka kembali. `oh-my-opencode` akan mendeteksi file `AGENTS.md` tersebut dan menyuntikkan instruksi di atas ke dalam system prompt AI.
 
 Sekarang, setiap kali Anda menyuruh AI bekerja, dia akan otomatis mengecek `todos.md` dan `CHANGELOG.md` tanpa perlu diingatkan!
 
