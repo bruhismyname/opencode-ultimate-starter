@@ -14,6 +14,7 @@ This repository provides configuration templates, critical crash fixes for Windo
 - **[guides/FIX_CRASH_AND_BUGS.md](guides/FIX_CRASH_AND_BUGS.md)**: Step-by-step technical solutions for installation errors.
 - **[prompts/CHEATSHEET_ID.md](prompts/CHEATSHEET_ID.md)**: (Bahasa Indonesia) Strategi hemat token dengan mode Planner.
 - **[prompts/CHEATSHEET_EN.md](prompts/CHEATSHEET_EN.md)**: (English) Token-saving prompt strategies.
+- **[guides/SETUP_PROJECT_RULES.md](guides/SETUP_PROJECT_RULES.md)**: Cara memaksa AI bekerja disiplin (Auto-create TODOs & Changelog) menggunakan `AGENTS.md`.
 
 ## Quick Setup
 1. **Install Prerequisites**: Follow the steps in **[INSTALL_GUIDE.md](INSTALL_GUIDE.md)** to install OpenCode, Oh My OpenCode, and Superpowers.

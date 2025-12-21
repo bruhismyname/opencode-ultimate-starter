@@ -4,6 +4,9 @@
     "Sisyphus": {
       "model": "github-copilot/claude-opus-4.5"
     },
+    "Planner-Sisyphus": {
+      "model": "github-copilot/o3-mini"
+    },
     "oracle": {
       "model": "github-copilot/gpt-5.2"
     },
