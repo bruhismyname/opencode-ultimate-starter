@@ -55,6 +55,14 @@ Tambahkan kalimat ini di akhir setiap prompt Anda:
 | **Frontend UI** | "Bertindaklah sebagai **@frontend-ui-ux-engineer**. Buatkan komponen [Nama UI] menggunakan komponen Shadcn yang sudah terinstall. Fokus pada hierarki visual." |
 | **Refactoring** | "Kode di file [Nama File] terlalu berantakan. Refactor agar lebih bersih (Clean Code) tanpa mengubah fungsi utamanya. Jelaskan apa yang diubah." |
 
+## Bagian 4: Multimodal (Image to Code)
+*Pastikan gambar sudah disimpan di folder project (misal: `./assets/gambar.png`)*
+
+| Tujuan | Prompt Sakti |
+| :--- | :--- |
+| **Konversi Desain ke Code** | "@multimodal-looker Analisis gambar di `./assets/gambar.png`. Buatkan kode **Next.js App Router + Tailwind** yang responsif. Pecah menjadi komponen kecil (Atomic Design) dan gunakan Server Components secara default." |
+| **Review UI** | "@multimodal-looker Lihat screenshot di `./debug/error-ui.png`. Kenapa layoutnya berantakan di mobile? Berikan perbaikan CSS Tailwind-nya." |
+
 ### Tips
 * **Jika Supabase Error:** Pastikan token di `opencode.json` masih valid.
 * **Jika Shadcn Error:** Pastikan project kamu sudah terinit `npx shadcn@latest init` sebelumnya.

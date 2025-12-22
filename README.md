@@ -5,6 +5,14 @@ This repository is the "missing manual" and "starter pack" for **OpenCode** user
 
 > **Status:** Updated for OpenCode v1.0+ | Supports Oh My OpenCode & Superpowers
 
+---
+
+### Too long; didn't read? (Males Baca?)
+**Just paste this repository link into ChatGPT, Claude, or Gemini and ask:**
+> *"I'm on Windows/Mac/Linux. Read this repo and tell me exactly how to install the fixes and use the planner mode."*
+
+---
+
 ## Why Use This Kit?
 
 ### 1. Stability Fixes (Anti-Crash)
@@ -35,6 +43,7 @@ A specialized Cheat Sheet to use the "Planner-Sisyphus" mode effectively, saving
 | **[`guides/FIX_CRASH_AND_BUGS.md`](guides/FIX_CRASH_AND_BUGS.md)** | Solution for Windows native crashes & Symlink errors. |
 | **[`guides/MCP_SETUP.md`](guides/MCP_SETUP.md)** | **New!** How to enable Supabase, Shadcn, & Web Search tools. |
 | **[`guides/SETUP_PROJECT_RULES.md`](guides/SETUP_PROJECT_RULES.md)** | **New!** How to automate AI workflow with `AGENTS.md`. |
+| **[`guides/IMAGE_TO_CODE.md`](guides/IMAGE_TO_CODE.md)** | **New!** Cara ubah gambar desain lokal jadi kodingan Next.js (No upload needed). |
 | **[`prompts/CHEATSHEET_ID.md`](prompts/CHEATSHEET_ID.md)** | (Bahasa Indonesia) Strategi Prompt Planner & penggunaan Tool MCP. |
 | **[`configs/`](configs/)** | Safe JSON configuration templates (Clean & Valid). |
 

@@ -1,18 +1,18 @@
 # Automate AI Discipline with `AGENTS.md`
 
-Salah satu fitur tersembunyi namun sangat powerful dari `oh-my-opencode` adalah **Directory Agents Injector**.
+One of the hidden but very powerful features of `oh-my-opencode` is the **Directory Agents Injector**.
 
-Fitur ini memungkinkan Anda "menanamkan" aturan kerja (SOP) ke dalam setiap project secara otomatis. AI akan membaca file ini sebelum mulai bekerja, sehingga ia akan selalu patuh pada workflow yang Anda tentukan.
+This feature allows you to automatically “embed” work rules (SOP) into each project. The AI will read this file before starting work, so it will always comply with the workflow you specify.
 
-## Cara Menggunakannya
+## How to Use It
 
-### Langkah 1: Buat File di Project Anda
-Di dalam folder root **project aplikasi** yang sedang Anda kerjakan (bukan folder config OpenCode), buat file baru bernama:
+### Step 1: Create a File in Your Project
+In the root folder of the **application project** you are working on (not the OpenCode config folder), create a new file named:
 
 `AGENTS.md`
 
-### Langkah 2: Isi dengan "Rules of Engagement"
-Salin template aturan di bawah ini. Aturan ini dirancang agar AI (Planner-Sisyphus) otomatis membuat rencana kerja (`todos.md`), mencatat perubahan (`CHANGELOG.md`), dan melakukan commit git secara rapi.
+### Step 2: Fill in the “Rules of Engagement”
+Copy the rule template below. These rules are designed so that the AI (Planner-Sisyphus) automatically creates a work plan (`todos.md`), records changes (`CHANGELOG.md`), and commits git neatly.
 
 ```markdown
 # Project Workflow Rules
@@ -44,9 +44,9 @@ You are strictly required to follow these workflow rules for every task.
   4. Git add & commit.
 ```
 
-### Langkah 3: Restart Sesi
-Tutup sesi OpenCode Anda saat ini, lalu buka kembali. `oh-my-opencode` akan mendeteksi file `AGENTS.md` tersebut dan menyuntikkan instruksi di atas ke dalam system prompt AI.
+### Step 3: Restart Session
+Close your current OpenCode session, then reopen it. `oh-my-opencode` will detect the `AGENTS.md` file and inject the above instructions into the AI system prompt.
 
-Sekarang, setiap kali Anda menyuruh AI bekerja, dia akan otomatis mengecek `todos.md` dan `CHANGELOG.md` tanpa perlu diingatkan!
+Now, every time you ask the AI to work, it will automatically check `todos.md` and `CHANGELOG.md` without needing to be reminded!
 
 ---
