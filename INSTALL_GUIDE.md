@@ -12,13 +12,20 @@ Open your terminal (PowerShell/CMD/Bash) and run:
 ```bash
 npm install -g opencode-ai
 ```
+### Verification
+Run this command to check if it's installed:
+```bash
+opencode --version
+```
 
 ## 2. Oh My OpenCode (The Plugin Framework)
 **Official Source:** [GitHub - code-yeongyu/oh-my-opencode](https://github.com/code-yeongyu/oh-my-opencode)
 
 ### How to Install
+- Open a fresh OpenCode session (close & reopen if needed).
+- Copy and Paste the following prompt into the chat bar, then press Enter:
 ```bash
-npm install -g oh-my-opencode
+Install and configure by following the instructions here [https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/refs/heads/master/README.md](https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/refs/heads/master/README.md)
 ```
 > ! **Important:** Do not edit `opencode.json` manually yet. Use the file provided in this Starter Kit (Step 4 below) to avoid crashes.
 
