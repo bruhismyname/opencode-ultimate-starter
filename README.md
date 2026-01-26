@@ -42,9 +42,12 @@ A specialized Cheat Sheet to use the "Planner-Sisyphus" mode effectively, saving
 | **[`INSTALL_GUIDE.md`](INSTALL_GUIDE.md)** | **Start Here!** How to install OpenCode, Oh My OpenCode, & Superpowers correctly. |
 | **[`guides/FIX_CRASH_AND_BUGS.md`](guides/FIX_CRASH_AND_BUGS.md)** | Solution for Windows native crashes & Symlink errors. |
 | **[`guides/MCP_SETUP.md`](guides/MCP_SETUP.md)** | **New!** How to enable Supabase, Shadcn, & Web Search tools. |
+| **[`guides/CLIPROXYAPI_SETUP.md`](guides/CLIPROXYAPI_SETUP.md)** | **New!** Setup CLIProxyAPI Docker + Antigravity OAuth. |
 | **[`guides/SETUP_PROJECT_RULES.md`](guides/SETUP_PROJECT_RULES.md)** | **New!** How to automate AI workflow with `AGENTS.md`. |
 | **[`guides/IMAGE_TO_CODE.md`](guides/IMAGE_TO_CODE.md)** | **New!** Cara ubah gambar desain lokal jadi kodingan Next.js (No upload needed). |
 | **[`prompts/CHEATSHEET_ID.md`](prompts/CHEATSHEET_ID.md)** | (Bahasa Indonesia) Strategi Prompt Planner & penggunaan Tool MCP. |
+| **[`guides/SKILLS_INTEGRATION.md`](guides/SKILLS_INTEGRATION.md)** | **New!** Create custom Agent Skills from your FSD/PRD with templates. |
+| **[`docs/SKILLS_CATALOG.md`](docs/SKILLS_CATALOG.md)** | Catalog of built-in Superpowers skills. |
 | **[`configs/`](configs/)** | Safe JSON configuration templates (Clean & Valid). |
 
 ---

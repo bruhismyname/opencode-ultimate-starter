@@ -1,29 +1,82 @@
 {
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/master/assets/oh-my-opencode.schema.json",
   "google_auth": false,
   "agents": {
-    "Sisyphus": {
-      "model": "github-copilot/claude-opus-4.5"
+    "sisyphus": {
+      "model": "cliproxy/claude-opus-4.5-high",
+      "description": "Main orchestrator - Claude Opus High Thinking",
+      "run_in_background": true,
+      "permission": {
+        "edit": "deny",
+        "write": "deny"
+      }
     },
-    "Planner-Sisyphus": {
-      "model": "github-copilot/o3-mini"
+    "prometheus": {
+      "model": "cliproxy/claude-sonnet-4.5-high",
+      "description": "Planning with Claude Sonnet High Thinking",
+      "run_in_background": true,
+      "permission": {
+        "edit": "deny",
+        "write": "deny"
+      }
     },
     "oracle": {
-      "model": "github-copilot/gpt-5.2"
+      "model": "cliproxy/claude-opus-4.5-high",
+      "description": "Architecture, debugging, code review",
+      "run_in_background": true,
+      "permission": {
+        "edit": "deny",
+        "write": "deny"
+      }
     },
     "librarian": {
-      "model": "github-copilot/claude-sonnet-4.5"
-    },
-    "frontend-ui-ux-engineer": {
-      "model": "github-copilot/gemini-3-pro-preview"
-    },
-    "document-writer": {
-      "model": "github-copilot/gemini-3-flash-preview"
-    },
-    "multimodal-looker": {
-      "model": "github-copilot/gemini-2.5-pro"
+      "model": "cliproxy/gemini-3-flash",
+      "description": "Docs lookup, codebase exploration",
+      "run_in_background": true,
+      "permission": {
+        "edit": "deny",
+        "write": "deny"
+      }
     },
     "explore": {
-      "model": "github-copilot/grok-code-fast-1"
+      "model": "cliproxy/gemini-3-flash",
+      "description": "Fast codebase search",
+      "run_in_background": true,
+      "permission": {
+        "edit": "deny",
+        "write": "deny"
+      }
+    },
+    "frontend-ui-ux-engineer": {
+      "model": "cliproxy/gemini-3-pro-high",
+      "description": "Beautiful UI development",
+      "run_in_background": true,
+      "permission": {
+        "edit": "deny",
+        "write": "deny"
+      }
+    },
+    "document-writer": {
+      "model": "cliproxy/gemini-3-flash",
+      "description": "Technical documentation",
+      "run_in_background": true,
+      "permission": {
+        "edit": "deny",
+        "write": "deny"
+      }
+    },
+    "multimodal-looker": {
+      "model": "cliproxy/gemini-3-pro-high",
+      "description": "Image and PDF analysis",
+      "run_in_background": true,
+      "permission": {
+        "edit": "deny",
+        "write": "deny"
+      }
     }
+  },
+  "disabled_agents": [],
+  "sisyphus_agent": {
+    "disabled": false
   }
 }
