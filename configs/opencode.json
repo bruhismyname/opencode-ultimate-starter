@@ -139,6 +139,32 @@
             }
           }
         },
+        "claude-opus-4.6-high": {
+          "id": "claude-opus-4-6-thinking",
+          "name": "Claude Opus 4.6 (High Thinking)",
+          "thinking": true,
+          "attachment": true,
+          "limit": {
+            "context": 200000,
+            "output": 65536
+          },
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "options": {
+            "thinkingConfig": {
+              "thinkingBudget": 32000,
+              "includeThoughts": true
+            }
+          }
+        },
         "claude-sonnet-4.5-high": {
           "id": "gemini-claude-sonnet-4-5-thinking",
           "name": "Claude Sonnet 4.5 (High Thinking)",

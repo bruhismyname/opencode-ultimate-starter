@@ -3,7 +3,7 @@
   "google_auth": false,
   "agents": {
     "sisyphus": {
-      "model": "cliproxy/claude-opus-4.5-high",
+      "model": "cliproxy/claude-opus-4.6-high",
       "description": "Main orchestrator - Claude Opus High Thinking",
       "run_in_background": true,
       "permission": {
@@ -12,8 +12,35 @@
       }
     },
     "prometheus": {
+      "model": "cliproxy/claude-opus-4.6-high",
+      "description": "Planning with Claude Opus High Thinking",
+      "run_in_background": true,
+      "permission": {
+        "edit": "deny",
+        "write": "deny"
+      }
+    },
+    "atlas": {
       "model": "cliproxy/claude-sonnet-4.5-high",
-      "description": "Planning with Claude Sonnet High Thinking",
+      "description": "Plan executor for /start-work",
+      "run_in_background": true,
+      "permission": {
+        "edit": "deny",
+        "write": "deny"
+      }
+    },
+    "metis": {
+      "model": "cliproxy/claude-opus-4.5-high",
+      "description": "Deep analysis and reasoning",
+      "run_in_background": true,
+      "permission": {
+        "edit": "deny",
+        "write": "deny"
+      }
+    },
+    "momus": {
+      "model": "cliproxy/claude-sonnet-4.5-high",
+      "description": "Deep analysis and reasoning",
       "run_in_background": true,
       "permission": {
         "edit": "deny",
@@ -77,6 +104,8 @@
   },
   "disabled_agents": [],
   "sisyphus_agent": {
-    "disabled": false
+    "disabled": false,
+    "planner_enabled": true,
+    "replace_plan": true
   }
 }
